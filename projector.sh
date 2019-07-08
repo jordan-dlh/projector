@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 DOC="projector: manages work directories synchronized with distant storage.
 
