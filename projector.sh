@@ -41,11 +41,11 @@ DOC_LIGHT="Usage:
 die () {
     if [ $# -ne 1 ]
     then
-        echo "Bad use of 'die' function."
+        1>&2 echo "Bad use of 'die' function."
         exit 2
     fi
-    echo "$1"
-    echo "$DOC_LIGHT"
+    1>&2 echo "$1"
+    1>&2 echo "$DOC_LIGHT"
     exit 1
 }
 
